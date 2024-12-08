@@ -4,7 +4,6 @@ import {
   latestProducts,
   trendingProducts,
 } from "../data/data";
-import Image from "next/image";
 import Product from "../components/Product";
 import { nanoid } from "nanoid";
 import LatestProdCard from "@/components/LatestProdCard";
