@@ -14,6 +14,7 @@ const config: Config = {
       },
       fontFamily: {
         josefin: ["Josefin Sans", "sans-serif"],
+        lato: ["Lato", "sans-serif"],
       },
     },
   },
