@@ -9,17 +9,17 @@ function TopBar() {
   return (
     <div className="bg-violet-600 w-full flex justify-around flex-wrap sticky top-0 z-10 px-2 py-2 items-center text-white font-josefin font-semibold text-base">
       <div className="flex gap-x-10 items-center lg:mb-0 mb-1">
-        <div className="flex gap-x-3 items-center">
+        <div className="flex md:gap-x-3 gap-x-1 items-center">
           <AiOutlineMail color="white" size={17} />
           <p className="">mhhasanul@gmail.com</p>
         </div>
-        <div className="flex gap-x-3 items-center">
+        <div className="flex md:gap-x-3 gap-x-1 items-center">
           <MdOutlinePhoneInTalk color="white" size={17} />
           <p className="">&#40;12345&#41;67890</p>
         </div>
       </div>
       <div className="flex">
-        <ul className="flex md:gap-x-6 gap-x-4  items-center">
+        <ul className="flex md:gap-x-6 gap-x-3  items-center">
           <li className="flex md:gap-x-[3px] gap-x-[2px] items-center">
             <p>English</p>
             <IoChevronDownOutline />

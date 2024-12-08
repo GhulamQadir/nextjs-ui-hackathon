@@ -1,4 +1,6 @@
+import Image from "next/image";
 import { TiTick } from "react-icons/ti";
+import ChairImg from "@/assets/chair-discount.png";
 
 function DiscountItem() {
   return (
@@ -11,8 +13,8 @@ function DiscountItem() {
           <li>Sofa Collection</li>
         </ul>
       </div>
-      <div className="flex justify-center mt-10">
-        <div className="lg:w-[35%] border-2 text-start">
+      <div className="flex flex-wrap gap-x-5 gap-y-5 justify-center items-center mt-10">
+        <div className="lg:w-[35%] text-start px-2">
           <p className="lg:text-[35px] text-[26px] text-[#1A0B5B] font-bold">
             20% Discount Of All Products
           </p>
@@ -21,7 +23,7 @@ function DiscountItem() {
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto,
             tenetur quae facilis doloremque ea itaque.
           </p>
-          <ul className="flex justify-between flex-wrap gap-x-6">
+          <ul className="flex justify-between flex-wrap gap-x-6 gap-y-1 mt-4">
             <li className="flex items-center gap-x-1">
               <TiTick color="purple" />
               <p className="text-[#B7BACB] text-sm">
@@ -45,8 +47,17 @@ function DiscountItem() {
               </p>
             </li>
           </ul>
+          <button className="mt-6 px-5 py-2 bg-[#FB2E86] text-white">
+            Shop Now
+          </button>
         </div>
-        <div></div>
+        <div className="bg-[#fcecfe] rounded-full lg:h-[350px] h-[270px]">
+          <Image
+            src={ChairImg}
+            alt="chair-img"
+            className="lg:h-[400px] lg:w-[400px] h-[280px] w-[300px]"
+          />
+        </div>
       </div>
     </div>
   );

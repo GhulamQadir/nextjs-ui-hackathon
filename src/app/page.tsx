@@ -40,10 +40,12 @@ export default function Home() {
           </p>
         </div>
         <ul className="flex justify-center md:gap-x-10 gap-x-5 font-lato md:text-lg text-base mt-4 lg:mb-5">
-          <li className="text-[#FB2E86] underline">New Arrival</li>
-          <li className="text-[#1A0B5B]">Best Seller</li>
-          <li className="text-[#1A0B5B]">Special Offer</li>
-          <li className="text-[#1A0B5B]">Featured</li>
+          <li className="text-[#FB2E86] underline md:text-base text-sm">
+            New Arrival
+          </li>
+          <li className="text-[#1A0B5B] md:text-base text-sm">Best Seller</li>
+          <li className="text-[#1A0B5B] md:text-base text-sm">Special Offer</li>
+          <li className="text-[#1A0B5B] md:text-base text-sm">Featured</li>
         </ul>
         <div className="flex flex-wrap justify-center gap-x-6 mt-5 lg:w-[80%] lg:m-auto">
           {latestProducts.map((prod) => {
@@ -51,13 +53,7 @@ export default function Home() {
           })}
         </div>
       </div>
-      {/* <div className="text-center mt-10 mb-10">
-        <div>
-          <p className="text-[#1A0B5B] font-josefin text-3xl font-bold">
-            What Shopex Offer!
-          </p>
-        </div>
-      </div> */}
+
       <WhatWeOffer />
       <UniqueFeaturesBanner />
       <div className="mt-10">

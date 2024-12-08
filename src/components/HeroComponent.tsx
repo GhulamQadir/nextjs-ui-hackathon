@@ -13,7 +13,7 @@ function HeroComponent() {
         />
         <div className="content-center">
           <p className="text-[#FB2E86]">Best Furniture For Your Castle....</p>
-          <p className="text-[50px] font-bold font-josefin">
+          <p className="text-[30px] md:text-[50px] font-bold font-josefin mt-3">
             New Furniture Collection Trends in 2020
           </p>
         </div>
