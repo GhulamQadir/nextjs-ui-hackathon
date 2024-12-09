@@ -28,7 +28,7 @@ function Product({ product }: { product: TProduct }) {
           <div className="w-3 h-[5px] bg-[#00009D] rounded-lg"></div>
         </div>
         <p className="font-josefin text-sm mt-3">Code: {code}</p>
-        <p className="font-josefin text-sm mt-1">${price}</p>
+        <p className="font-josefin text-sm mt-1">${price}.00</p>
       </div>
     </div>
   );

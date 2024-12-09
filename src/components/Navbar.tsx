@@ -1,9 +1,21 @@
+"use client";
 import Link from "next/link";
 import { IoChevronDownOutline } from "react-icons/io5";
 import { IoSearch } from "react-icons/io5";
 import { GiHamburgerMenu } from "react-icons/gi";
+import { Drawer } from "antd";
+import { useState } from "react";
 
 function Navbar() {
+  const [open, setOpen] = useState(false);
+
+  const showDrawer = () => {
+    setOpen(true);
+  };
+
+  const onClose = () => {
+    setOpen(false);
+  };
   return (
     <div className="w-full lg:py-2 md:py-[5px] py-4 flex justify-center z-10 sticky top-[65px] md:top-[40px] bg-white">
       <div className="lg:w-[85%] px-2 w-full flex justify-between lg:justify-around items-center font-josefin">
@@ -45,9 +57,25 @@ function Navbar() {
           </button>
         </div>
         <div className="block lg:hidden">
-          <button className="flex items-center">
+          <button className="flex items-center" onClick={showDrawer}>
             <GiHamburgerMenu size={20} />
           </button>
+          <Drawer
+            title="Basic Drawer"
+            placement={"left"}
+            closable={false}
+            onClose={onClose}
+            open={open}
+            key={"left"}
+            width={200}
+          >
+            <button onClick={onClose} className="bg-red-500 p-3 text-white">
+              close drawer
+            </button>
+            <p>Some contents...</p>
+            <p>Some contents...</p>
+            <p>Some contents...</p>
+          </Drawer>
         </div>
       </div>
     </div>

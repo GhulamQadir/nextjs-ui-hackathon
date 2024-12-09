@@ -31,7 +31,7 @@ function LatestProdCard({ product }: { product: TLatestProduct }) {
           <p className="text-[#1A0B5B]">{title}</p>
         </div>
         <div className="flex gap-x-2 items-center">
-          <p className="text-[#1A0B5B]">${price}</p>
+          <p className="text-[#1A0B5B]">${price}.00</p>
           <p className="text-xs text-[#FB2E86] line-through">${oldPrice}</p>
         </div>
       </div>

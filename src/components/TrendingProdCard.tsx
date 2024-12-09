@@ -24,7 +24,7 @@ function TrendingProdCard({ product }: { product: TTrendingProduct }) {
       <div className="mt-2 text-center">
         <p className="text-[#0D0E43] text-lg font-bold">{title}</p>
         <div className="flex justify-center items-center gap-x-2">
-          <p className="font-josefin text-lg  text-[#0D0E43]">${price}</p>
+          <p className="font-josefin text-lg  text-[#0D0E43]">${price}.00</p>
           <p className="font-josefin text-sm text-gray-500 line-through">
             ${oldPrice}
           </p>
