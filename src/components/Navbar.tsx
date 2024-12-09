@@ -78,22 +78,26 @@ function Navbar() {
             </div>
             <ul className="text-lg font-josefin text-[#0D0E43] mt-4">
               <li className="mt-3">
-                <Link href={"/"}>Home</Link>
+                <Link href={"/"} onClick={onClose}>
+                  Home
+                </Link>
               </li>
               <li className="mt-3">
-                <Link href={"/pages"}>Pages</Link>
+                <Link href={"/pages"} onClick={onClose}>
+                  Pages
+                </Link>
               </li>
               <li className="mt-3">
-                <Link href={"#"}>Products</Link>
+                <Link href={"#"} onClick={onClose}>Products</Link>
               </li>
               <li className="mt-3">
-                <Link href={"#"}>Blog</Link>
+                <Link href={"#"} onClick={onClose}>Blog</Link>
               </li>
               <li className="mt-3">
-                <Link href={"#"}>Shop</Link>
+                <Link href={"#"} onClick={onClose}>Shop</Link>
               </li>
               <li className="mt-3">
-                <Link href={"#"}>Contact</Link>
+                <Link href={"#"} onClick={onClose}>Contact</Link>
               </li>
             </ul>
             <div className="mt-5">
