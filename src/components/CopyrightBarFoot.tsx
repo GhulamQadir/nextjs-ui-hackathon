@@ -3,7 +3,7 @@ import { FaFacebookF, FaTwitter, FaInstagram } from "react-icons/fa";
 
 function CopyrightBarFoot() {
   return (
-    <div className="bg-[#E7E4F8] flex justify-between md:px-32 px-2 py-2">
+    <div className="bg-[#E7E4F8] flex justify-between md:px-32 px-2 py-3">
       <div className="flex items-center">
         <MdCopyright color="#9DA0AE" />
         <p className="text-[#9DA0AE] text-sm">Webecy - All rights Reserved</p>
