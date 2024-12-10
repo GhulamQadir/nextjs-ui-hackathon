@@ -141,4 +141,61 @@ const topCategories = [
   },
 ];
 
-export { featuredProducts, latestProducts, trendingProducts, topCategories };
+const accessoriesAndFashion: TTrendingProduct[] = [
+  {
+    title: "Vel elit euismod",
+    image: "/accessories-and-fashion/img-1.png",
+    price: 26,
+    oldPrice: 42,
+  },
+  {
+    title: "Ultricies condimentum imperdiet",
+    image: "/accessories-and-fashion/img-2.png",
+    price: 26,
+    oldPrice: 42,
+  },
+  {
+    title: "Vitae suspendisse sed",
+    image: "/accessories-and-fashion/img-3.png",
+    price: 26,
+    oldPrice: 42,
+  },
+  {
+    title: "Sed at fermentum",
+    image: "/accessories-and-fashion/img-4.png",
+    price: 26,
+    oldPrice: 42,
+  },
+  {
+    title: "Fusce pellentesque at",
+    image: "/accessories-and-fashion/img-5.png",
+    price: 26,
+    oldPrice: 42,
+  },
+  {
+    title: "Vestibulum magna laoreet",
+    image: "/accessories-and-fashion/img-6.png",
+    price: 26,
+    oldPrice: 42,
+  },
+  {
+    title: "Vel elit euismod",
+    image: "/accessories-and-fashion/img-7.png",
+    price: 26,
+    oldPrice: 42,
+  },
+  {
+    title: "Sollicitudin amet orci",
+    image: "/accessories-and-fashion/img-8.png",
+    price: 26,
+    oldPrice: 42,
+  },
+];
+
+export {
+  featuredProducts,
+  latestProducts,
+  trendingProducts,
+  topCategories,
+  accessoriesAndFashion,
+};

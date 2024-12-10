@@ -1,3 +1,8 @@
+import AccessoriesAndFashionCard from "@/components/AccessroriesAndFashCard";
+import { accessoriesAndFashion } from "@/data/data";
+import { nanoid } from "nanoid";
+import { MdOutlineGridView, MdOutlineCalendarViewDay } from "react-icons/md";
+
 function Pages() {
   return (
     <div>
@@ -13,7 +18,7 @@ function Pages() {
       </div>
 
       <div className="my-20">
-        <div className="flex justify-around">
+        <div className="flex flex-wrap gap-y-4 justify-around px-1 py-2">
           <div>
             <p className="text-[#1A0B5B] lg:text-2xl text-lg font-bold">
               Ecommerce Accessories & Fashion item
@@ -22,18 +27,34 @@ function Pages() {
               About 9,620 results (0.62 seconds)
             </p>
           </div>
-          <div className="flex gap-x-5 items-center">
+          <div className="flex flex-wrap gap-x-5 gap-y-3 items-center">
             <div className="flex gap-x-2">
               <p>Per Page:</p>
               <input type="text" className="w-10 h-5 border-[1px]" />
             </div>
             <div className="flex items-center gap-x-2">
               <p>Sort By:</p>
-              <select name="Best Match" className="border-[1px]">
+              <select
+                name="Best Match"
+                className="border-[1px] border-gray-300 p-[2px] text-sm text-gray-400"
+              >
                 <option value="Best Match">Best Match</option>
               </select>
             </div>
+            <div className="flex gap-x-3 items-center">
+              <div className="flex gap-x-1 items-center">
+                <p>View:</p>
+                <MdOutlineGridView />
+                <MdOutlineCalendarViewDay size={30} />
+              </div>
+              <input type="text" className="w-36 h-6 border-[1px]" />
+            </div>
           </div>
+        </div>
+        <div className="flex flex-wrap justify-center items-center gap-x-10 mt-8 mb-5 lg:px-5 px-1">
+          {accessoriesAndFashion.map((prod, index) => {
+            return <AccessoriesAndFashionCard product={prod} key={nanoid()} />;
+          })}
         </div>
       </div>
     </div>
