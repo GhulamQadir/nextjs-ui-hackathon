@@ -52,7 +52,7 @@ function Pages() {
           </div>
         </div>
         <div className="flex flex-wrap justify-center items-center gap-x-10 mt-8 mb-5 lg:px-5 px-1">
-          {accessoriesAndFashion.map((prod, index) => {
+          {accessoriesAndFashion.map((prod) => {
             return <AccessoriesAndFashionCard product={prod} key={nanoid()} />;
           })}
         </div>
