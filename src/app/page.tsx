@@ -5,7 +5,7 @@ import {
   topCategories,
   trendingProducts,
 } from "../data/data";
-import Product from "../components/Product";
+import FeaturedProduct from "../components/FeaturedProduct";
 import { nanoid } from "nanoid";
 import LatestProdCard from "@/components/LatestProdCard";
 import WhatWeOffer from "@/components/WhatWeOffer";
@@ -21,7 +21,7 @@ export default function Home() {
   return (
     <div>
       <HeroComponent />
-      <div className="text-center my-12">
+      {/* <div className="text-center my-12">
         <div className="mb-3">
           <p className="text-3xl text-[#1A0B5B] font-bold font-josefin">
             Featured Products
@@ -32,7 +32,8 @@ export default function Home() {
             return <Product key={nanoid()} product={prod} />;
           })}
         </div>
-      </div>
+      </div> */}
+      <FeaturedProduct />
       <div className="flex justify-center gap-x-3 mt-10">
         <div className="w-6 h-[6px] border-[#FB2E86] border-2 bg-[#FB2E86] rounded-md"></div>
         <div className="w-6 h-[6px] border-[#FB2E86] border-2 rounded-md"></div>
