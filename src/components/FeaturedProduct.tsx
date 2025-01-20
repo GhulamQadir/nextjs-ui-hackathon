@@ -4,14 +4,8 @@ import { useEffect, useState } from "react";
 import { client } from "../sanity/lib/client";
 import { nanoid } from "nanoid";
 import Link from "next/link";
+import { TProduct } from "@/types";
 
-interface TProduct {
-  name: string;
-  code: string;
-  price: number;
-  image: string;
-  slug: string;
-}
 
 function FeaturedProduct() {
   const [featuredProducts, setFeaturedProducts] = useState<TProduct[] | null>(
@@ -26,7 +20,6 @@ function FeaturedProduct() {
       setFeaturedProducts(data);
     };
     fetchFeaturedProducts();
-    console.log(featuredProducts);
   }, []);
   return (
     <div className="text-center my-12">

@@ -7,7 +7,7 @@ import {
 } from "../data/data";
 import FeaturedProduct from "../components/FeaturedProduct";
 import { nanoid } from "nanoid";
-import LatestProdCard from "@/components/LatestProdCard";
+import LatestProduct from "@/components/LatestProd";
 import WhatWeOffer from "@/components/WhatWeOffer";
 import UniqueFeaturesBanner from "@/components/UniqueFeaturesBanner";
 import TrendingProdCard from "@/components/TrendingProdCard";
@@ -21,44 +21,8 @@ export default function Home() {
   return (
     <div>
       <HeroComponent />
-      {/* <div className="text-center my-12">
-        <div className="mb-3">
-          <p className="text-3xl text-[#1A0B5B] font-bold font-josefin">
-            Featured Products
-          </p>
-        </div>
-        <div className="flex flex-wrap justify-center gap-x-4 mt-5">
-          {featuredProducts.map((prod) => {
-            return <Product key={nanoid()} product={prod} />;
-          })}
-        </div>
-      </div> */}
       <FeaturedProduct />
-      <div className="flex justify-center gap-x-3 mt-10">
-        <div className="w-6 h-[6px] border-[#FB2E86] border-2 bg-[#FB2E86] rounded-md"></div>
-        <div className="w-6 h-[6px] border-[#FB2E86] border-2 rounded-md"></div>
-        <div className="w-6 h-[6px] border-[#FB2E86] border-2  rounded-md"></div>
-      </div>
-      <div className="mt-16 content-center text-center">
-        <div>
-          <p className="text-3xl text-[#1A0B5B] font-bold font-josefin">
-            Latest Products
-          </p>
-        </div>
-        <ul className="flex justify-center md:gap-x-10 gap-x-5 font-lato md:text-lg text-base mt-4 lg:mb-5">
-          <li className="text-[#FB2E86] underline md:text-base text-sm">
-            New Arrival
-          </li>
-          <li className="text-[#1A0B5B] md:text-base text-sm">Best Seller</li>
-          <li className="text-[#1A0B5B] md:text-base text-sm">Special Offer</li>
-          <li className="text-[#1A0B5B] md:text-base text-sm">Featured</li>
-        </ul>
-        <div className="flex flex-wrap justify-center gap-x-6 mt-5 lg:w-[80%] lg:m-auto">
-          {latestProducts.map((prod) => {
-            return <LatestProdCard key={nanoid()} product={prod} />;
-          })}
-        </div>
-      </div>
+      <LatestProduct />
 
       <WhatWeOffer />
       <UniqueFeaturesBanner />
