@@ -14,6 +14,15 @@ export const productType = {
       title: "Description",
     },
     {
+      name: "slug",
+      title: "Slug",
+      type: "slug",
+      options: {
+        source: "name",
+        maxLength: 50,
+      },
+    },
+    {
       name: "price",
       type: "number",
       title: "Product Price",
